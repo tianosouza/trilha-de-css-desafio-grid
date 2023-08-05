@@ -1,0 +1,149 @@
+@import url(./reset.css);
+
+body {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    background: #F9F9F9;
+    justify-content: center;
+    grid-template-columns: 218px repeat(3, 1fr);
+    grid-template-rows: 56px repeat(3, 1fr) ;
+    grid-template-areas: 
+    "header header header header"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main";
+}
+header {
+    grid-area: header;
+    padding: 10px 24px; 
+    background-color: #FFF;
+}
+main {
+    grid-area: main;
+}
+aside {
+    grid-area: sidebar;
+    background-color: #FFF;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+}
+.menu .left {
+    display: flex;
+    gap: 32px;
+}
+.menu .left .menu-img {
+    width: 24px;
+    height: 24px;
+}
+.menu .left .logo {
+    width: 90px;
+    height: 20px;
+}
+.center {
+    display: flex;
+    align-items: center;
+}
+.center .input {
+    width: 348px;
+    height: 40px;
+    border: 1px solid #CCC;
+    border-radius: 8px 0 0 8px; 
+}
+.center .search {
+    display: flex;
+    width: 57px;
+    height: 40px;
+    border: 1px solid #CCC;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 8px 8px 0;
+}
+.rigth {
+    display: flex;
+    gap: 24px; 
+}
+.sidebar {
+    display: flex;
+    padding: 24px 24px;
+    
+}
+.sidebar .nav-item {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+.item-secundary {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+#main-grid {
+    padding: 24px 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 282px);
+    grid-template-rows: repeat(3, 262px );
+    gap: 14px;
+    grid-template-areas: 
+    "video1 video2 video3 video4"
+    "video5 video6 video7 video8"
+    "video9 video10 video11 video12";  
+}
+.text  {
+    position: relative;
+    width: 197px;
+    height: 20px;
+    gap: 16px;
+    display:flex;
+    flex-direction: column; 
+    top: -10px;     
+}
+.text h3 {
+    
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+}
+.text p {
+    width: 160px;
+    color: #515151;
+    font-size: 12px;
+    font-weight: 400;   
+}
+.avatar{
+    display: flex;
+    align-items: center;
+    gap: 10px;   
+}
+.avatar img {
+   width: 42px;
+   height: 42px;
+}
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+}
+.video .img {
+    width: 250px;
+    height: 140.288px;
+    
+}
+
+
